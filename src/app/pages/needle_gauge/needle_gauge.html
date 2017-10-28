@@ -1,0 +1,59 @@
+<div class="col-md-12 col-lg-12 header_add">
+    <button class="btn btn-success" (click)="openModal(needleG, 'add')">
+      Add
+    </button>
+  </div>
+  <div class="col-md-12 col-lg-12 table_needleG">
+    <div class="row header_row">
+      <div class="col-md-2 col-lg-2 header_text">
+        Name
+      </div>
+      <div class="col-md-8 col-lg-8 header_text">
+        Properties
+      </div>
+      <div class="col-md-2 col-lg-2 header_text">
+          Actions
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 col-lg-12 results">
+      <div class="row" *ngFor="let ng of needleGs">
+        <div class="col-md-2 col-lg-2 result_text">
+            {{ng.description}}
+        </div>
+        <div class="col-md-8 col-lg-8 result_text">
+          
+        </div>
+        <div class="col-md-2 col-lg-2 result_text">
+          <button class="btn btn-primary" (click)="openModal(needleG, 'edit', ng.id, ng.description)">
+            Edit
+          </button>
+          <button class="btn btn-danger" (click)="deleteNeedleG(ng.id)">
+              Delete
+          </button>
+        </div>
+    </div>  
+  </div>
+
+
+<!-- Modal drug -->
+  <div id="needleG" class="modal fade">
+    <div class="modal-dialog">        
+       <div class="modal-content">
+        <div class="modal-body">
+          <div class="col-md-12 col-lg-12 modal_title">
+            Drug
+          </div>
+          <div class="col-md-12 col-lg-12 modal_input">
+            <div class="input-group">
+                <span class="input-group-addon input-group-addon-primary addon-left" id="basic-addon1">Description</span>
+                <input aria-describedby="basic-addon1" class="form-control with-primary-addon" placeholder="Username" type="text" [(ngModel)]="needleG_name">
+              </div>
+          </div>
+          <div class="col-md-12 col-lg-12 modal_button">
+              <button class="btn btn-success" (click)="saveNeedleG()">Save</button>
+        </div>
+       </div>
+   </div>
+</div>

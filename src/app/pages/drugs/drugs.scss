@@ -1,0 +1,64 @@
+
+.header_add{
+    padding: 10px;
+    text-align: right;
+}
+.table_drugs{
+    border: 2px solid #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    background: #f2f2f2;
+}
+
+.header_row{
+    padding: 0;
+    margin: 0;    
+}
+
+.header_text{
+    color: #000;
+    text-align: center;
+    font-size: 24;
+    font-weight: bold;
+    text-transform: uppercase;       
+}
+
+.results{
+    border: 2px solid #f2f2f2;    
+    border-radius: 5px;
+}
+
+.result_text{
+    color: #000;
+    text-align: center;
+    font-size: 18   ;
+    font-weight: bold;
+    padding: 20px;   
+    border-bottom: 1px solid #f2f2f2;
+}   
+
+.form-control{
+    border: 1px solid #00abff;
+    color: #000;
+    font-size: 20;
+    font-weight: bold;
+}
+
+.modal_title{
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.modal_body{
+    padding: 5%;
+}
+
+.modal_input{
+    margin-top: 20px
+}
+
+.modal_button{
+    margin-top: 20px;
+    text-align: right;
+}
